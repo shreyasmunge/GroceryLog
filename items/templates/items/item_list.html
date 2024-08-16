@@ -1,0 +1,20 @@
+{% extends 'items/base.html' %}
+
+{% block content %}
+<div class="container item-list">
+    <h1>Grocery Items</h1>
+    <a href="{% url 'item_create' %}" class="add-item">Add New Item</a>
+    <ul>
+        {% for item in items %}
+            <li>
+                <span>{{ item.name }}</span>
+                <div>
+                    <a href="{% url 'item_detail' item.pk %}">View</a>
+                    <a href="{% url 'item_update' item.pk %}">Edit</a>
+                    <a href="{% url 'item_delete' item.pk %}" class="delete">Delete</a>
+                </div>
+            </li>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock %}

@@ -1,0 +1,107 @@
+/* items/static/items/styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    color: #333;
+    margin-top: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+}
+
+a:hover {
+    text-decoration: none;
+    color:black;
+}
+
+.container {
+    width: 80%;
+    max-width: 800px;
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.item-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.item-list li {
+    background-color: whitesmoke;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item-list li a {
+    margin-right: 10px;
+    color: #1e90ff;
+}
+.item-list li a:hover{
+    color: black;
+}
+.item-list li a.delete {
+    color: red;
+}
+
+.item-list li a.delete:hover{
+    text-decoration: none;
+    color:black;
+}
+
+.item-form, .item-detail, .confirm-delete {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.item-form form, .confirm-delete form {
+    width: 100%;
+}
+
+.add-item{
+    color:#1e90ff
+}
+.add-item:hover{
+    color: darkblue;
+}
+
+
+button {
+    padding: 10px 20px;
+    background-color: #1e90ff; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; 
+}
+
+button:hover {
+    background-color: black; 
+}
+
+.navbar{
+    justify-content: center;
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+    
+}

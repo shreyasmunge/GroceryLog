@@ -1,0 +1,9 @@
+{% extends 'items/base.html' %}
+
+{% block content %}
+<div class="container item-detail">
+    <h1>{{ item.name }}</h1>
+    <p><strong>Quantity:</strong> {{ item.quantity }}</p>
+    <p><strong>Description:</strong> {{ item.description }}</p>
+</div>
+{% endblock %}
